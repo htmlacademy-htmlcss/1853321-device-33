@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/style.css">
   <title>HTML Academy: Девайс</title>
 </head>
 
@@ -11,58 +12,63 @@
     <a class="logo-link">
       <img class="logo-image" src="./images/logo-header.svg" alt="Логотип компании девайс" width="145" height="36">
     </a>
-    <form action="#" class="header-form">
-      <input type="text" placeholder="Текст поиска">
-      <input type="submit" value="Найти">
-    </form>
+
     <nav class="navigation">
-      <ul class="navigation-list user-navigation">
-        <li class="navigation-item">
-          <a class="navigation-item-link" href="#">
-            Войти
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-item-link" href="#">
-            Сравнить
-          </a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-item-link" href="#">
-            Корзина
-          </a>
-          <div class="cart">
-            <ul class="cart-list">
-              <li class="cart-item">
-                <a href="" class="cart-item-link">
-                  <img src="./images/card-item/product-1.jpg" alt="Любительская селфи палка" class="cart-image" width="39" height="43">
-                  <h3 class="cart-title">Любительская селфи палка</h3>
-                </a>
-                <button class="cart-remove">x</button>
-              </li>
-              <li class="cart-item">
-                <a href="" class="cart-item-link">
-                  <img src="./images/card-item/product-2.jpg" alt="Профессиональная селфи-палка" class="cart-image" width="39" height="43">
-                  <h3 class="cart-title">Профессиональная селфи-палка </h3>
-                </a>
-                <button class="cart-remove">x</button>
-              </li>
-            </ul>
-            <div class="cart-total">
-              <span class="cart-total-items">
-                Товаров: 2
-              </span>
-              <span class="cart-total-items">
-                Сумма: 2000 ₽
-              </span>
+      <div class="wrapper-form">
+        <form action="#" class="header-form">
+          <input type="text" placeholder="Текст поиска">
+          <input type="submit" value="Найти">
+        </form>
+        <ul class="user-navigation">
+          <li class="user-navigation-item user-navigation--user">
+            <a class="user-navigation-link" href="#">
+              Войти
+            </a>
+          </li>
+          <li class="user-navigation-item user-navigation--сравнить">
+            <a class="user-navigation-link" href="#">
+              Сравнить
+            </a>
+          </li>
+          <li class="user-navigation-item user-navigation--cart">
+            <a class="user-navigation-link" href="#">
+              Корзина
+            </a>
+            <div class="cart">
+              <ul class="cart-list">
+                <li class="cart-item">
+                  <a href="" class="cart-item-link">
+                    <img src="./images/card-item/product-1.jpg" alt="Любительская селфи палка" class="cart-image"
+                      width="39" height="43">
+                    <h3 class="cart-title">Любительская селфи палка</h3>
+                  </a>
+                  <button class="cart-remove">x</button>
+                </li>
+                <li class="cart-item">
+                  <a href="" class="cart-item-link">
+                    <img src="./images/card-item/product-2.jpg" alt="Профессиональная селфи-палка" class="cart-image"
+                      width="39" height="43">
+                    <h3 class="cart-title">Профессиональная селфи-палка </h3>
+                  </a>
+                  <button class="cart-remove">x</button>
+                </li>
+              </ul>
+              <div class="cart-total">
+                <span class="cart-total-items">
+                  Товаров: 2
+                </span>
+                <span class="cart-total-items">
+                  Сумма: 2000 ₽
+                </span>
+              </div>
+              <a class="cart-link" href="#">Открыть корзину</a>
             </div>
-            <a class="cart-link" href="#">Открыть корзину</a>
-          </div>
-        </li>
-      </ul>
+          </li>
+        </ul>
+      </div>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a href="">
+          <a class="navigation-link menu-link" href="catalog.html">
             Каталог товаров
           </a>
           <ul class="navigation-sublist">
@@ -81,17 +87,17 @@
           </ul>
         </li>
         <li class="navigation-item">
-          <a href="#">
+          <a class="menu-link" href="#">
             Доставка
           </a>
         </li>
         <li class="navigation-item">
-          <a href="#">
+          <a class="menu-link" href="#">
             Гарантия
           </a>
         </li>
         <li class="navigation-item">
-          <a href="#">
+          <a class="menu-link" href="#">
             Контакты
           </a>
         </li>
@@ -110,7 +116,7 @@
       <ul class="promo-slider">
         <li class="promo-slider-item">
           <div class="slider-image-container">
-            <img src="./images/slider-1.png" alt="" class="slider-image">
+            <img src="./images/slider-1.png" alt="Квадрокоптер" class="slider-image">
           </div>
           <div class="slider-description-wrapper">
             <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -120,18 +126,18 @@
             <ul class="slider-features">
               <li class="features-item">
                 <p class="feature-value">800 м</p>
-                <h4 class="feature-caption">Дальность полета</h4>
+                <p class="feature-caption">Дальность полета</p>
               </li>
               <li class="features-item">
                 <p class="feature-value">50 м</p>
-                <h4 class="feature-caption">Радиус поражения</h4>
+                <p class="feature-caption">Радиус поражения</p>
               </li>
             </ul>
           </div>
         </li>
         <li class="promo-slider-item">
           <div class="slider-image-container">
-            <img src="./images/slider-2.png" alt="" class="slider-image">
+            <img src="./images/slider-2.png" alt="Фитнес-браслет" class="slider-image">
           </div>
           <div class="slider-description-wrapper">
             <h3 class="slider-title">Худеем правильно!</h3>
@@ -148,7 +154,7 @@
         </li>
         <li class="promo-slider-item">
           <div class="slider-image-container">
-            <img src="./images/slider-3.png" alt="" class="slider-image">
+            <img src="./images/slider-3.png" alt="Палка для селфи" class="slider-image">
           </div>
           <div class="slider-description-wrapper">
             <h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
@@ -202,33 +208,33 @@
     </section>
     <section class="products">
       <ul class="products-list">
-        <li class="products-item products-item--vr">
-          <a class="products-link">
+        <li class="products-item">
+          <a href="#" class="products-link products-link--vr">
             Виртуальная реальность
           </a>
         </li>
-        <li class="products-item products-item--selfi">
-          <a class="products-link">
+        <li class="products-item">
+          <a href="#" class="products-link products-link--selfi">
             Моноподы для селфи
           </a>
         </li>
-        <li class="products-item products-item--action-camers">
-          <a class="products-link">
+        <li class="products-item">
+          <a href="#" class="products-link products-link--action-camers">
             Экшн-камеры
           </a>
         </li>
-        <li class="products-item products-item--fitness">
-          <a class="products-link">
+        <li class="products-item">
+          <a href="#" class="products-link products-link--fitness">
             Фитнес-браслеты
           </a>
         </li>
-        <li class="products-item products-item--watch">
-          <a class="products-link">
+        <li class="products-item">
+          <a href="#" class="products-link products-link--watch">
             Умные часы
           </a>
         </li>
-        <li class="products-item products-item--quadrocopter">
-          <a class="products-link">
+        <li class="products-item">
+          <a href="#" class="products-link products-link--quadrocopter">
             Квадрокоптеры
           </a>
         </li>
