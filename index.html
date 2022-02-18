@@ -116,7 +116,7 @@
       <ul class="promo-slider">
         <li class="promo-slider-item">
           <div class="slider-image-container">
-            <img src="./images/slider-1.png" alt="Квадрокоптер" class="slider-image">
+            <img src="./images/slider-1.png" alt="Квадрокоптер" class="slider-image" width="560" height="560">
           </div>
           <div class="slider-description-wrapper">
             <h3 class="slider-title">Порхает как бабочка, жалит как пчела!</h3>
@@ -137,7 +137,7 @@
         </li>
         <li class="promo-slider-item">
           <div class="slider-image-container">
-            <img src="./images/slider-2.png" alt="Фитнес-браслет" class="slider-image">
+            <img src="./images/slider-2.png" alt="Фитнес-браслет" class="slider-image" width="560" height="560">
           </div>
           <div class="slider-description-wrapper">
             <h3 class="slider-title">Худеем правильно!</h3>
@@ -154,7 +154,7 @@
         </li>
         <li class="promo-slider-item">
           <div class="slider-image-container">
-            <img src="./images/slider-3.png" alt="Палка для селфи" class="slider-image">
+            <img src="./images/slider-3.png" alt="Палка для селфи" class="slider-image" width="560" height="560">
           </div>
           <div class="slider-description-wrapper">
             <h3 class="slider-title">Делай селфи, как Бен Стиллер!</h3>
@@ -241,6 +241,7 @@
       </ul>
     </section>
     <section class="advantages">
+     <div class="inner-advantages">
       <h2 class="visually-hidden">
         Информация о нас
       </h2>
@@ -274,9 +275,12 @@
             наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
         </li>
       </ul>
-      <a class="delivery-link" href="#">Доставим редкий товар под заказ</a>
-    </section>
+     </div>
 
+    </section>
+    <div class="wrapper-delivery-link">
+      <a class="delivery-link" href="#">Доставим редкий товар под заказ</a>
+    </div>
     <div class="about-container">
       <section class="about_us">
         <h3 class="about_us-title">
@@ -327,7 +331,8 @@
     </div>
 
     <section class="mailing">
-      <h3 class="mailing-title">
+      <div class="inner-mailing">
+        <h3 class="mailing-title">
         Подпишитесь на рассылку
       </h3>
       <p class="mailing-subtitle">
@@ -341,59 +346,62 @@
       <p class="mailing-text-decoration">
         Это бесплатно
       </p>
+      </div>
     </section>
   </main>
   <footer class="footer">
     <h3 class="visually-hidden">
       Адрес компании
     </h3>
-    <section class="footer-address">
-      <a href="#" class="footer-address">
-        <img src="./images/logo-footer.svg" alt="Логотип компании Девайс">
-      </a>
-      <address class="address">
-        Санкт-Петербург, набережная реки Карповки, 5, литера П.
-      </address>
-    </section>
-    <section class="footer-list">
-      <h3 class="visually-hidden">
-        Навигация по сайту и ссылки на социальные сети компании
-      </h3>
-      <ul class="footer-list-site">
-        <li class="footer-list-item">
-          <a href="" class="footer-link-site footer-delivery">Доставка</a>
-        </li>
-        <li class="footer-list-item">
-          <a href="" class="footer-link-site footer-guarantee">Гарантия</a>
-        </li>
-        <li class="footer-list-item">
-          <a href="" class="footer-link-site footer-contacts">Контакты</a>
-        </li>
-      </ul>
-      <ul class="footer-list-social">
-        <li class="footer-list-social-item">
-          <a href="https://www.facebook.com/htmlacademy" target="_blank" class="footer-social-link facebook-icon">
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="footer-list-social-item">
-          <a href="https://www.instagram.com/htmlacademy" target="_blank" class="footer-social-link instagram-icon">
-            <span class="visually-hidden">instagram</span>
-          </a>
-        </li>
-        <li class="footer-list-social-item">
-          <a href="https://www.twitter.com/htmlacademy_ru" target="_blank" class="footer-social-link twitter-icon">
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="footer-phone">
-      <a href="tel:78128121212" class="footer-phone">+7 (812) 812-12-12</a>
-      <a href="https://htmlacademy.ru/" target="_blank" class="academy-link">
-        <img src="./images/html-academy.svg" alt="ссылка на Htmlacademy">
-      </a>
-    </section>
+    <div class="inner-footer">
+      <section class="footer-address">
+        <a href="#" class="footer-address">
+          <img src="./images/logo-footer.svg" alt="Логотип компании Девайс">
+        </a>
+        <address class="address">
+          Санкт-Петербург, набережная реки Карповки, 5, литера П.
+        </address>
+      </section>
+      <section class="footer-list">
+        <h3 class="visually-hidden">
+          Навигация по сайту и ссылки на социальные сети компании
+        </h3>
+        <ul class="footer-list-site">
+          <li class="footer-list-item">
+            <a href="" class="footer-link-site footer-delivery">Доставка</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="" class="footer-link-site footer-guarantee">Гарантия</a>
+          </li>
+          <li class="footer-list-item">
+            <a href="" class="footer-link-site footer-contacts">Контакты</a>
+          </li>
+        </ul>
+        <ul class="footer-list-social">
+          <li class="footer-list-social-item">
+            <a href="https://www.facebook.com/htmlacademy" target="_blank" class="footer-social-link facebook-icon">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="footer-list-social-item">
+            <a href="https://www.instagram.com/htmlacademy" target="_blank" class="footer-social-link instagram-icon">
+              <span class="visually-hidden">instagram</span>
+            </a>
+          </li>
+          <li class="footer-list-social-item">
+            <a href="https://www.twitter.com/htmlacademy_ru" target="_blank" class="footer-social-link twitter-icon">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="footer-phone">
+        <a href="tel:78128121212" class="footer-phone">+7 (812) 812-12-12</a>
+        <a href="https://htmlacademy.ru/" target="_blank" class="academy-link">
+          <img src="./images/html-academy.svg" alt="ссылка на Htmlacademy">
+        </a>
+      </section>
+    </div>
   </footer>
 </body>
 
